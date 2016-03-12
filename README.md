@@ -10,7 +10,7 @@ Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW RV.
  - Projektdokumentation
 
 ## Benutzung
-Um die Vorlage zu benutzen, kannst du sie einfach [hier](/julianbei/vorlage-dhbw-rv-wi/archive/master.zip) Downloaden.
+Um die Vorlage zu benutzen, kannst du sie einfach [hier](https://github.com/julianbei/vorlage-dhbw-rv-wi/archive/master.zip) Downloaden.
 Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup](## Versionierung und Backup))
 
 ## Installation
