@@ -11,7 +11,7 @@ Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW RV.
 
 ## Benutzung
 Um die Vorlage zu benutzen, kannst du sie einfach [hier](https://github.com/julianbei/vorlage-dhbw-rv-wi/archive/master.zip) Downloaden.
-Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup](## Versionierung und Backup))
+Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup]( #Versionierung-und-Backup))
 
 ## Installation
 Es empfiehlt sich Wissenschaftliche Arbeiten mit TexStudio zu bearbeiten.
@@ -51,6 +51,12 @@ einen neuen Befehl mit folgendem Inhalt anlegen:
 txs:///bibtex | txs:///makeindex "%.idx" -t "%.ilg" -o "%.ind" | txs:///makeindex -g -s "styles/stichwortverzeichnis.ist" % | txs:///makeindex "%.nlo" -s nomencl.ist -o "%.nls" | txs:///makeindex  -s "%.ist" -t "%.glg" -o "%.gls" "%.glo"
 ```
 Anschließend mit Tools/benutzer/key kompilieren.									  
+
+## Wichtige Befehle
+Falls du unerfahren in LaTeX bist,
+[hier](CHEET_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
+
+[Cheet Sheet](CHEET_SHEET.md)
 
 ## Allgemeine Informationen zum Gebrauch
 Keine Änderungen an den Dateien im Verzeichnis ```./pages/``` vornehmen. Für die Arbeit beziehen sich alle Änderungen auf diese Datei und die Dateien im Verzeichnis ```./chapter/```.
@@ -128,10 +134,10 @@ In der Datei: ```vorlage.tex``` muss folgender bereich mit deinen persönlichen 
 ```
 Gibt an welche art von Projekt geschrieben wird. Dadurch wird das entsprechende Titelblatt mit den nachfolgenden Informationen befüllt.
 folgende werte können verwendet werden:
-- {0} [Seminararbeit](##### Seminararbeit)
-- {1} [Projektarbeit](##### Projektarbeit)
-- {2} [Bachelorarbeit](##### Bachelorarbeit)
-- {3} [Projektdokumentation](##### Projektdokumentation)
+- {0} [Seminararbeit](#Seminararbeit)
+- {1} [Projektarbeit](#Projektarbeit)
+- {2} [Bachelorarbeit](#Bachelorarbeit)
+- {3} [Projektdokumentation](#Projektdokumentation)
 
 ##### Allgemeine Informationen
 
@@ -144,7 +150,7 @@ folgende werte können verwendet werden:
 | `\def\myProf{Betruer Name}`     | **_Betreuer Name_**   | Titel Vorname und Nachname des Betreuenden Lehrkörpers|
 | `\def\myEndDate{Abgabe Datum}`  | **_Abgabe Datum_**    | Abgabedatum der Arbeit                                |
 
-##### Seminararbeit
+##### <a name="Seminararbeit"></a>Seminararbeit
 Spezielle befehle für eine Seminararbeit:
 
 | Befehl                              | variable              | Erläuterung                                           |
@@ -152,7 +158,7 @@ Spezielle befehle für eine Seminararbeit:
 | `\def\myType{0}`                    | **_0_**               | Option **0** ist Seminararbeit                        |
 | `\def\myVorlesung{Vorlesungstitel}` | **_Vorlesungstitel_** | Titel der Vorlesung                                   |
 
-##### Projektarbeit
+##### <a name="Projektarbeit"></a>Projektarbeit
 
 | Befehl                              | variable              | Erläuterung                                           |
 | ----------------------------------- |:---------------------:| ----------------------------------------------------- |
@@ -161,7 +167,7 @@ Spezielle befehle für eine Seminararbeit:
 | `\def\myCompanyAddressStreet{Unternehmen Anschrift}` | **_Unternehmen Anschrift_** | Straße Hausnummer Unternehmenssitzes                                 |
 | `\def\myCompanyAddressCity{Stadt des Unternehmenssitzes}` | **_Stadt des Unternehmenssitzes_** | PLZ Stadt Unternehmenssitzes                                   |
 
-##### Bachelorarbeit
+##### <a name="Bachelorarbeit"></a>Bachelorarbeit
 
 | Befehl                              | variable              | Erläuterung                                           |
 | ----------------------------------- |:---------------------:| ----------------------------------------------------- |
@@ -170,7 +176,7 @@ Spezielle befehle für eine Seminararbeit:
 | `\def\myCompanyAddressStreet{Unternehmen Anschrift}` | **_Unternehmen Anschrift_** | Straße Hausnummer Unternehmenssitzes                                 |
 | `\def\myCompanyAddressCity{Stadt des Unternehmenssitzes}` | **_Stadt des Unternehmenssitzes_** | PLZ Stadt Unternehmenssitzes                                   |
 
-##### Projektdokumentation
+##### <a name="Projektdokumentation"></a>Projektdokumentation
 Bei Projektdokumentationen gibt es die Besonderheit, dass es mehrere Autoren geben kann.
 Daher wird das Feld: `\myAutor` anders belegt.
 
@@ -203,13 +209,8 @@ Für die Erstellung des Literaturverzeichnises empfiehlt sich die Verwendung von
 
 Die Datei ist unter ```./literatur/literatur.bib``` zu speichern.                                        
 
-## Wichtige Befehle
-Falls du unerfahren in LaTeX bist,
-[hier](CHEAT_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
 
-[Cheet Sheet](CHEAT_SHEET.md)
-
-## Versionierung und Backup
+## <a name="Versionierung-und-Backup"></a>Versionierung und Backup
 Es empfielt sich für das Schreiben von wissenschaftlichen Arbeiten eine Versionierung wie git zu verwenden.
 Falls dies nicht möglich ist (bspw. weil man nicht bereit is für private repositories zu bezahlen), dann sollte man zumindest eine andere form des automatischen Backups verwenden.
 Dazu empfehlen sich folgende lösungen:
