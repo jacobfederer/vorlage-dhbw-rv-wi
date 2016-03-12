@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                         %%
+%% \/   \/      Erklärung der Begriffe						       \/   \/ %%
+%%                                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Überschriften und Gliederung				%
+\section{erste Gliederungsebene}		   	% 
+\subsection{zweite Gliederungsebene}	   	% 
+\subsubsection{dritte Gliederungsebene}		% 
+\subsubsection{dritte Gliederungsebene}		% 
+\label{referenzKey} 					   	% Einen Referenzpunkt setzen
+%											% 
+%% Text Styles								%
+\gqq{Anführungszeichen} 				\\ 	% 
+\textbf{Fettgedruckt}					\\ 	% 
+\textit{Kursiv}							\\ 	% 
+\underline{Unterstrichen}				\\ 	% 
+\\											% Zeilenumbruch
+%											%
+%% Text Elements							%
+\myboxquote{Dieser Text steht in einer Box} % Für längere Zitate geeignet
+\begin{itemize}								% Beginn einer Aufzählung
+	\item erster Punkt						% Aufzählungspunkt
+	\item Zweiter Punkt						% Aufzählungspunkt
+\end{itemize}								% Ende der Aufzählung
+\begin{figure}[hbt]							% Beginn einer Grafik
+	\centering 								% trim=left bottom right top
+	\includegraphics[trim = 200mm 0mm 0mm 0mm, width=0.5\textwidth]{images/jubilaeum.jpg}
+	\caption{Bild beschriftung} {\emph{\vgl[540]{BiBkey}}} % zweiter teil nicht im Verzeichnis
+	\label{jubilaeum}
+\end{figure}
+%											% 
+%% Glossar									%
+\gls{BPM} 								\\ 	% Glossar eintrag
+\glspl{BPM} 							\\ 	% Plural des Glossar eintrags
+\gls{ASM} 								\\ 	% Wenn Glossar eintrag erstamlig verwendet wird
+\glspl{ASM} 							\\ 	% Wird die Bezeichnung ausgeschrieben, 
+%											% anschließend wir abgekürzt
+%											% 
+%% Quellen Referenzierung 					%
+\vgl{BiBkey} 							\\ 	% Vergleichs verweis ohne Seitenangabe
+\vgl[2]{BiBkey} 						\\ 	% Vergleichs verweis mit Seitenangabe
+\vgl[13,~46]{BiBkey}					\\ 	% Vergleichs verweis mit mehreren Seitenangaben
+\cite{BiBkey} 							\\ 	% Directer Literatur aufruf
+%											% 
+%% Label Referenzierung 					%
+(siehe \mypageref{referenzKey})			\\ 	% Referenz auf \label key mit Seitenangabe
+Abb. \ref{jubilaeum}					\\	% Referenz auf \label ohne Seitenangabe
+%											%
+%% Weitere Hinweise
+Mehrmals Kompilieren hilft manchmal bei Problemen.\\
+Alles außer vorlage.tex und der Ordner aus dem Root-Verzeichnis löschen und mehrmals neu kompilieren löst hartnäckigere Fehler.
