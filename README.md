@@ -13,9 +13,30 @@ Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW RV.
 Um die Vorlage zu benutzen, kannst du sie einfach hier Downloaden.
 Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup](## Versionierung und Backup))
 
-## Installation Windows
-
 ## Installation MacOS
+TBD
+short:
+- download and install [MacTex](https://tug.org/mactex/)
+- download and install [TechnStudio](http://www.texstudio.org/)
+- be happy
+## Installation Linux
+TBD
+short:
+- download and install [TexLive](https://www.tug.org/texlive/)
+- download and install [TexStudio](http://www.texstudio.org/)
+- be happy
+
+### Debian Based (bspw. Ubuntu):
+```
+sudo apt-get install texlive-full
+```
+
+## Installation Windows
+TBD (wer benutzt schon freiwillig windows)
+- download and install [MikTex](http://miktex.org/)
+- download and install [TexStudio](http://www.texstudio.org/)
+- switch to Linux or MacOs
+- think about how much the last step impacted your live in terms of happiness!
 
 ## Konfiguration TexStudio
 Konfiguration für TeXstudio: <br>
@@ -24,7 +45,7 @@ einen neuen Befehl mit folgendem Inhalt anlegen:
 ```bash
 txs:///bibtex | txs:///makeindex "%.idx" -t "%.ilg" -o "%.ind" | txs:///makeindex -g -s "styles/stichwortverzeichnis.ist" % | txs:///makeindex "%.nlo" -s nomencl.ist -o "%.nls" | txs:///makeindex  -s "%.ist" -t "%.glg" -o "%.gls" "%.glo"
 ```
-mit Tools/benutzer/key kompilieren.									  
+Anschließend mit Tools/benutzer/key kompilieren.									  
 
 ## Allgemeine Informationen zum Gebrauch
 Keine Änderungen an den Dateien im Verzeichnis ```./pages/``` vornehmen. Für die Arbeit beziehen sich alle Änderungen auf diese Datei und die Dateien im Verzeichnis ```./chapter/```.
@@ -164,6 +185,11 @@ Beispiel:
 	 Peter Pan 3421540
 	}
 ```
+### Strukturierung der Arbeit
+Es empfiehlt sich pro Kapitel eine neue Datei anzulegen.
+
+### Verzeichnisse
+TBD
 
 ### Literaturarbeit
 Für die Erstellung des Literaturverzeichnises empfiehlt sich die Verwendung von:
@@ -173,8 +199,7 @@ Für die Erstellung des Literaturverzeichnises empfiehlt sich die Verwendung von
 Die Datei ist unter ```./literatur/literatur.bib``` zu speichern.                                        
 
 ## Wichtige Befehle
-
-
+TBD
 
 ## Versionierung und Backup
 Es empfielt sich für das Schreiben von wissenschaftlichen Arbeiten eine Versionierung wie git zu verwenden.
