@@ -135,7 +135,7 @@ Jegliche Hilfe dieses Projekt *Up-To-Date* zu halten ist eußerst willkommen.
 ## Credits
 Inspiriert von der Vorlage von Markus Schutz (WI06).
 
-## License
+## [License](LICESE.md)
 The MIT License (MIT)
 Copyright (c) 2016 Julian Beisenkötter
 
