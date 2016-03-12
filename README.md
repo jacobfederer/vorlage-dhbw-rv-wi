@@ -205,9 +205,9 @@ Die Datei ist unter ```./literatur/literatur.bib``` zu speichern.
 
 ## Wichtige Befehle
 Falls du unerfahren in LaTeX bist,
-[hier](CHEET_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
+[hier](CHEAT_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
 
-[Cheet Sheet](CHEET_SHEET.md)
+[Cheet Sheet](CHEAT_SHEET.md)
 
 ## Versionierung und Backup
 Es empfielt sich für das Schreiben von wissenschaftlichen Arbeiten eine Versionierung wie git zu verwenden.
