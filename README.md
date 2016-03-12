@@ -54,9 +54,9 @@ Anschließend mit Tools/benutzer/key kompilieren.
 
 ## Wichtige Befehle
 Falls du unerfahren in LaTeX bist,
-[hier](CHEET_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
+[hier](CHEAT_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
 
-[Cheet Sheet](CHEET_SHEET.md)
+[Cheet Sheet](CHEAT_SHEET.md)
 
 ## Allgemeine Informationen zum Gebrauch
 Keine Änderungen an den Dateien im Verzeichnis ```./pages/``` vornehmen. Für die Arbeit beziehen sich alle Änderungen auf diese Datei und die Dateien im Verzeichnis ```./chapter/```.
