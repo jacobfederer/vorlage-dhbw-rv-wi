@@ -13,25 +13,30 @@ Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW RV.
 Um die Vorlage zu benutzen, kannst du sie einfach hier Downloaden.
 Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup](## Versionierung und Backup))
 
-## Installation MacOS
+## Installation
+Es empfiehlt sich Wissenschaftliche Arbeiten mit TexStudio zu bearbeiten.
+
+### Installation MacOS
 TBD
 short:
 - download and install [MacTex](https://tug.org/mactex/)
-- download and install [TechnStudio](http://www.texstudio.org/)
+- download and install [TexStudio](http://www.texstudio.org/)
 - be happy
-## Installation Linux
+
+### Installation Linux
 TBD
 short:
 - download and install [TexLive](https://www.tug.org/texlive/)
 - download and install [TexStudio](http://www.texstudio.org/)
 - be happy
 
-### Debian Based (bspw. Ubuntu):
+#### Debian Based (bspw. Ubuntu):
+
 ```
 sudo apt-get install texlive-full
 ```
 
-## Installation Windows
+### Installation Windows
 TBD (wer benutzt schon freiwillig windows)
 - download and install [MikTex](http://miktex.org/)
 - download and install [TexStudio](http://www.texstudio.org/)
