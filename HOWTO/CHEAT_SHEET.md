@@ -54,6 +54,16 @@ für genauerer erläuterung siehe hier:
 	\label{jubilaeum}
 \end{figure}
 ```
+### Tabelle
+```TeX
+\begin{table}[hbt]
+\centering
+\caption{Beschriftung {\emph{\vgl[540]{BiBkey}}}
+\label{big5-korrelation}
+	--> Tabelle einfügen. Als LaTeX tabelle oder Bild
+\end{table}
+```
+
 ### Glossar
 ```TeX
 \gls{BPM} 								\\ 	% Glossar eintrag
