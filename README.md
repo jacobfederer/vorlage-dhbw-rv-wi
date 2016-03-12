@@ -65,8 +65,9 @@ Keine Änderungen an den Dateien im Verzeichnis ```./pages/``` vornehmen. Für d
 Die Verzeichnisstruktur sieht folgendermaßen aus:
 ```
 .
-├── LICENSE.txt                 # Die Lizenz dieser Vorlage
+├── LICENSE.md                  # Die Lizenz dieser Vorlage
 ├── README.md                   # Die Datei die du gerade liest
+├── HOWTO                       # Verzeichnis mit Anleitungen zur Benutzung 
 ├── chapter                     # Dein Arbeitsverzeichnis
 │   ├── 10_einleitung.tex       # Beispiel Datei mit beispielen
 │   ├── 20_kapitel.tex          # Beispiel Kapitel
