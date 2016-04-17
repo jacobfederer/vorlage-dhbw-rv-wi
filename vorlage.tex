@@ -8,6 +8,7 @@
 \usepackage{makeidx}                                                          % Index
 \usepackage[intoc]{nomencl}                                                   % Abkürzungsverzeichnis
 \usepackage{fancyhdr}           	                                          % Fancy Header
+\usepackage{pdfpages}															% For PDF include in the Appendix
 \usepackage[round]{natbib}                                                    % Zitate (Erweiterung für Literaturverzeichnis)
 \usepackage{amsmath}                                                          % Zurücksetzen der Tabellen- und Abbildungsnummerierung je Sektion
 \usepackage[labelfont=bf,aboveskip=1mm]{caption}                              % Bild- und Tabellenunterschrift (fett)
@@ -25,7 +26,6 @@
 \usepackage{glossaries-babel}     											  % Glossar: Übersetzung im TOC
 \usepackage{wasysym}
 \usepackage{amssymb}
-% ORPHANS
 \usepackage{xspace}
 \widowpenalty=300
 \clubpenalty=300
@@ -254,7 +254,7 @@
 	\include{pages/20_erklaerung}
 
 	\begin{appendix}
-		\include{chapter/30_anhang}
+		\include{appendix/index}
 
 	\end{appendix}
 \end{document}

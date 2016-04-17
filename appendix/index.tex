@@ -1,0 +1,21 @@
+%% Include für alle Anhänge
+
+%% Coverpage des Anhangs oder Einzelseite (1)
+%% Mit Anhangstitel
+\includepdf[
+pages={1},
+scale=0.80,
+pagecommand={
+	\thispagestyle{fancy}
+	\appsection{O'REILLY: Bootstrap}{bootstrap-book} % Appendix Titel
+}
+]{appendix/Artefact.pdf}
+
+%% Folgeseiten (2-Ende) des Anhangs mit Titel der vorangegangenen Coverpage
+\includepdf[
+pages={2-},
+scale=0.85,
+pagecommand={
+	\thispagestyle{fancy}
+}
+]{appendix/Artefact.pdf}
