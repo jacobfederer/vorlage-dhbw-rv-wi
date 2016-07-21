@@ -1,5 +1,5 @@
 # Initiale Konfiguration
-In der Datei: ```vorlage.tex``` muss folgender bereich mit deinen persönlichen angaben ausgefüllt werden:
+In der Datei: ```config/config.tex``` muss folgender Bereich mit deinen persönlichen Angaben ausgefüllt werden:
 ```TeX
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Konfiguration %%
@@ -28,12 +28,12 @@ In der Datei: ```vorlage.tex``` muss folgender bereich mit deinen persönlichen 
 \def\myProjNumber{2}         % [1|2]
 \def\myPraxPhase{2}          % [1|2|3]
 ```
-#### Die Befehle im Einzelenen
+#### Die Befehle im Einzelnen
 ```
 \def\myType{1}
 ```
-Gibt an welche art von Projekt geschrieben wird. Dadurch wird das entsprechende Titelblatt mit den nachfolgenden Informationen befüllt.
-folgende werte können verwendet werden:
+Gibt an welche Art von Projekt geschrieben wird. Dadurch wird das entsprechende Titelblatt mit den nachfolgenden Informationen befüllt.
+Folgende Werte können verwendet werden:
 - {0} [Seminararbeit](#Seminararbeit)
 - {1} [Projektarbeit](#Projektarbeit)
 - {2} [Bachelorarbeit](#Bachelorarbeit)

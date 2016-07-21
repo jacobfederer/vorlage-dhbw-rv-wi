@@ -173,3 +173,22 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~*
+
+
+# not general content
+config/config.tex
+config/gliederung.tex
+config/metaseiten.tex
+config/*.aux
+
+chapter/
+!chapter/10_einleitung.tex
+!chapter/20_kapitel.tex
+!chapter/80_fazit.tex
+!chapter/glossary_collection.tex
+
+literatur/
+!literatur/example/
+
+images/
+!images/example/

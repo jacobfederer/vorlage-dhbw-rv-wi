@@ -10,6 +10,13 @@ Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW RV.
  - Projektdokumentation
 
 ## Benutzung
+Es gibt zwei Möglichkeiten, diese Vorlage zu benutzen:
+
+### Mit git
+Um die Versionierung der Vorlage zu nutzen, empfiehlt es sich, das Repository auf Github auszuchecken. Alle Einstellungen (Parameter, Gliederung) kannst du im Ordner /config vornehmen. Dieser wird vom Repository nicht beeinflusst. Alle Konfigurationen, die du vornehmen musst, findest du im Ordner /config/example. Für ein korrektes Funktionieren der Vorlage benötigst du alle drei Dateien.
+Dateien, die du zum Ordner /chapter hinzufügst, werden ebenfalls ignoriert, Änderungen an den Beispieldateien werden jedoch von der Versionsverwaltung verfolgt.
+
+### Ohne git
 Um die Vorlage zu benutzen, kannst du sie einfach [hier](https://github.com/julianbei/vorlage-dhbw-rv-wi/archive/master.zip) Downloaden.
 Das .zip entpacken und den Inhalt in dein gewünschtes Arbeitsverzeichnis kopieren. (siehe: [Versionierung und Backup]( #Versionierung-und-Backup))
 
@@ -54,7 +61,7 @@ Anschließend mit Tools/benutzer/key kompilieren.
 
 ## Wichtige Befehle
 Falls du unerfahren in LaTeX bist,
-[hier](HOWTO/CHEAT_SHEET.md) gibt es eine übersicht der wichtigesten befehle die du im Zusammenhang mit dieser Vorlage brauchst:
+[hier](HOWTO/CHEAT_SHEET.md) gibt es eine übersicht der wichtigsten Befehle die du im Zusammenhang mit dieser Vorlage brauchst:
 
 [Cheet Sheet](HOWTO/CHEAT_SHEET.md)
 
@@ -67,7 +74,7 @@ Die Verzeichnisstruktur sieht folgendermaßen aus:
 .
 ├── LICENSE.md                  # Die Lizenz dieser Vorlage
 ├── README.md                   # Die Datei die du gerade liest
-├── HOWTO                       # Verzeichnis mit Anleitungen zur Benutzung 
+├── HOWTO                       # Verzeichnis mit Anleitungen zur Benutzung
 ├── chapter                     # Dein Arbeitsverzeichnis
 │   ├── 10_einleitung.tex       # Beispiel Datei mit beispielen
 │   ├── 20_kapitel.tex          # Beispiel Kapitel

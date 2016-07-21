@@ -33,28 +33,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Konfiguration %%
-
-\def\myType{0}
-%% 0=Seminararbeit   %%
-%% 1=Projektarbeit   %%
-%% 2=Bachelorarbeit  %%
-%% 3=Projektdokumentation %%
-
-\def\myTopic{Titel}
-\def\mySubTopic{Untertitel}
-\def\myAutor{Vorname Nachname}
-\def\myCompany{Unternehmensname}
-\def\myCompanyAddressStreet{Unternehmen Anschrift}
-\def\myCompanyAddressCity{Stadt des Unternehmenssitzes}
-\def\myProf{Betruer Name}
-\def\myEndDate{Abgabe Datum}
-
-%% Seminararbeit %%
-\def\myVorlesung{Vorlesungstitel}
-
-%% Projektarbeit %%
-\def\myProjNumber{2}         % [1|2]
-\def\myPraxPhase{2}          % [1|2|3]
+\input{config/config}
 
 %%%%%%%%%%%%%%%%%%%%%%%% Eigene Farbwerte definieren %%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{boxgray}{gray}{0.9}         % Hintergrundfarbe für Zitatboxen
@@ -210,35 +189,14 @@
 	\fi
 
 	\pagestyle{fancy}
-	\include{pages/11_sperrvermerk}						% Entfernen wenn nicht notwendig
-	\include{pages/12_inhaltsverzeichnis}
-	\include{pages/13_abkuerzungsverzeichnis}
-	\include{pages/15_abbildungsverzeichnis}
-	\include{pages/16_tabellenverzeichnis}
-	\include{pages/17_listingsverzeichnis}
+	\input{config/metaseiten}
 
 	% Kapitel
 	\pagestyle{fancy}
 	\fancyhead[L]{\nouppercase{\leftmark}}                               % Kopfzeile links bzw. innen
 	\pagenumbering{arabic}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                         %%
-%% \/   \/      Bitte hier die Änderungen zur Arbeit vornehmen     \/   \/ %%
-%%                                                                         %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-	\include{chapter/glossary_collection}	% Glossar falls  benötigt
-
-	\include{chapter/10_einleitung}
-	\include{chapter/20_kapitel}
-	\include{chapter/80_fazit}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                                                                         %%
-%% /\   /\    Bis hier die Änderungen zur Arbeit vornehmen         /\   /\ %%
-%%                                                                         %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\input{config/gliederung}
 
 	% Anhang
 	\renewcommand{\thetable}{\Alph{section}.\arabic{table}}              % Tabellennummerierung mit Section
