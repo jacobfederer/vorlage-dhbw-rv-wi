@@ -117,7 +117,7 @@
 
 %%%%%%%%%%%%% Index, Abkürzungsverzeichnis und Glossar erstellen %%%%%%%%%%%%
 \makeindex
-\makenomenclature
+%\makenomenclature
 \makeglossaries
 
 % Festlegung der Art der Zitierung (Havardmethode: Abkuerzung Autor + Jahr) %
@@ -177,7 +177,10 @@
 	linewidth=0.94\linewidth,
 	xleftmargin=0.1\linewidth,
 	breaklines=true,
-	aboveskip=16pt
+	aboveskip=16pt,
+	morekeywords={@Test},
+	moredelim=[il][\textcolor{blue}]{$$},
+    moredelim=[is][\textcolor{blue}]{\%\%}{\%\%}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -220,7 +223,6 @@
 
 	% Abschluss
 	\include{pages/18_literaturverzeichnis}
-	\include{pages/14_glossar}
 	\include{pages/19_index}
 	\include{pages/20_erklaerung}
 
