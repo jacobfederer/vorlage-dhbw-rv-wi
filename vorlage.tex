@@ -9,6 +9,12 @@
 \usepackage[intoc]{nomencl}                                                   % Abkürzungsverzeichnis
 \usepackage{fancyhdr}           	                                          % Fancy Header
 \usepackage{pdfpages}															% For PDF include in the Appendix
+
+\usepackage{epigraph}
+
+\usepackage[export]{adjustbox}[2011/08/13]
+
+
 \usepackage[round]{natbib}                                                    % Zitate (Erweiterung für Literaturverzeichnis)
 \usepackage{amsmath}                                                          % Zurücksetzen der Tabellen- und Abbildungsnummerierung je Sektion
 \usepackage[labelfont=bf,aboveskip=1mm]{caption}                              % Bild- und Tabellenunterschrift (fett)
@@ -22,7 +28,14 @@
 \usepackage{enumitem}                                                         % Befehl setlist (Zeilenabstand für itemize Umgebung auf 1 setzen)
 \usepackage{listings}                                                         % Quelltexte
 \usepackage{zref}                                                             % Verweise (Anhangsverweise)
-\usepackage[toc,style=altlist,translate=false]{glossaries}                    % Glossar (nach hyperref, inputenc, babel und ngerman)
+
+\usepackage[toc,acronyms,style=altlist,translate=false]{glossaries}        
+%\usepackage[acronyms]{glossaries}
+
+\loadglsentries{chapter/glossary_collection}
+
+
+% Glossar (nach hyperref, inputenc, babel und ngerman)
 \usepackage{glossaries-babel}     											  % Glossar: Übersetzung im TOC
 \usepackage{wasysym}
 \usepackage{amssymb}
