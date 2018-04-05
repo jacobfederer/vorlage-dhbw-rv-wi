@@ -182,6 +182,11 @@
     moredelim=[is][\textcolor{blue}]{\%\%}{\%\%}
 }
 
+\renewcommand{\sectionmark}[1]{ 
+    \markright{ 
+    \MakeUppercase{\thesection. #1} 
+    }}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                                         %%
 %% \/   \/      Bitte hier nur bei Bedarf Änderungen vornehmen     \/   \/ %%
@@ -208,7 +213,7 @@
 
 	% Kapitel
 	\pagestyle{fancy}
-	\fancyhead[L]{\nouppercase{\leftmark}}                               % Kopfzeile links bzw. innen
+	\fancyhead[L]{\nouppercase{\rightmark}}                               % Kopfzeile links bzw. innen
 	\pagenumbering{arabic}
 
 	\input{config/gliederung}
