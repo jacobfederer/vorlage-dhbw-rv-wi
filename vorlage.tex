@@ -33,7 +33,8 @@
 
 \usepackage[toc,acronyms,style=altlist]{glossaries}        
 
-\makenoidxglossaries
+\makeglossaries
+%% Sharelatex: Wenn vorlage nicht im Root liegt, anstatt \makenoidxglossaries benutzen
 
 \usepackage{xparse}
 \DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
@@ -139,7 +140,6 @@
 	pdftitle=\myTopic,
 	pdfsubject=\myTopic,
 	pdfauthor=\myAutor,
-	pdfborder=0,
 	pdfstartview=Fit,
 	pdfpagelayout=SinglePage
 }
