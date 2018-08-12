@@ -11,6 +11,9 @@
 
 \usepackage{epigraph}
 
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+
 \usepackage[export]{adjustbox}[2011/08/13]
 
 
@@ -28,11 +31,19 @@
 \usepackage{listings}                                                         % Quelltexte
 \usepackage{zref}                                                             % Verweise (Anhangsverweise)
 
-\usepackage[toc,acronyms,style=altlist,translate=false]{glossaries}        
-%\usepackage[acronyms]{glossaries}
+\usepackage[toc,acronyms,style=altlist]{glossaries}        
 
-\loadglsentries{chapter/glossary_collection}
+\makenoidxglossaries
 
+\usepackage{xparse}
+\DeclareDocumentCommand{\newdualentry}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \newacronym[see={[Glossar:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
+
+\input{chapter/glossary_collection}
 
 % Glossar (nach hyperref, inputenc, babel und ngerman)
 \usepackage{glossaries-babel}     											  % Glossar: Übersetzung im TOC
@@ -116,8 +127,6 @@
 
 %%%%%%%%%%%%% Index, Abkürzungsverzeichnis und Glossar erstellen %%%%%%%%%%%%
 \makeindex
-%\makenomenclature
-\makeglossaries
 
 % Festlegung der Art der Zitierung (Havardmethode: Abkuerzung Autor + Jahr) %
 \bibliographystyle{dinat}
@@ -140,6 +149,7 @@
 \fancyhf{}
 \fancyhead[R]{\thepage}                         % Kopfzeile rechts bzw. außen
 \renewcommand{\headrulewidth}{0.5pt}            % Kopfzeile rechts bzw. außen
+\setlength{\headheight}{14.5pt} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Layout und Beschriftungen %%%%%%%%%%%%%%%%%%%%%%%%%
 \onehalfspacing                % Zeilenabstand: 1.5 (Standard: 1.2)
@@ -182,9 +192,9 @@
     moredelim=[is][\textcolor{blue}]{\%\%}{\%\%}
 }
 
-\renewcommand{\sectionmark}[1]{ 
-    \markright{ 
-    \MakeUppercase{\thesection. #1} 
+\renewcommand{\sectionmark}[1]{
+    \markright{
+    \MakeUppercase{\thesection. #1}
     }}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
